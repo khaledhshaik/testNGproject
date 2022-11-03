@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Loan Department">
+<listeners>
+<listener class-name="test.Listeners"/>
+</listeners>
+  <test  name="Personal Loan">
+    <classes>
+      <class name="test.Demo">
+      <methods>
+       <include name="demo"/>
+      </methods>
+      </class>
+      <class name="test.Demo2"/>
+      <class name="test.Demo4"/>
+    </classes>
+  </test> 
+  
+  <test  name="Car Loan">
+  <parameter name="URL" value="personal loan.com"/>
+  <parameter name="APIkey/username" value="52630415236"/>
+  <classes>
+  <class name="test.Demo3">
+  <methods>
+     <exclude name="propertyloan"/>
+     
+  </methods>
+  </class>
+  </classes>
+  </test>
+</suite> 
